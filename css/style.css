@@ -5,9 +5,10 @@
 /* ********************* */
 
 :root {
-  --Pale-Blue: hsl(225, 100%, 94%);
-  --Bright-Blue: hsl(245, 75%, 52%);
-  --Very-Pale-Blue: hsl(225, 100%, 98%);
+  --Background: hsl(225, 100%, 94%);
+  --Card-Background: hsl(0, 0%, 100%);
+  --Button: hsl(245, 75%, 52%);
+  --Plan-Background: hsl(225, 100%, 98%);
   --Desaturated-Blue: hsl(224, 23%, 55%);
   --Dark-Blue: hsl(223, 47%, 23%);
 }
@@ -65,5 +66,91 @@ select {
 /* ********************* */
 
 body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Red Hat Display", sans-serif;
+  background: var(--Background);
+  padding: 20px;
+}
+
+.card {
+  max-width: 450px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  background: var(--Card-Background);
+  border-radius: 20px;
+  overflow: hidden;
+  /* gap: 20px; */
+  text-align: center;
+}
+
+.card-main-content {
+  padding: 20px;
+}
+
+.card-intro-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-intro-text h1 {
+  font-size: 20px;
+  margin-bottom: 17px;
+}
+
+.card-intro-text p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ********************* */
+/* PLAN DETAILS */
+/* ********************* */
+
+.plan-detail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 46px;
+  padding: 26px;
+  border-radius: 14px;
+  background: var(--Plan-Background);
+}
+.plan-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ********************* */
+/* BUTTON */
+/* ********************* */
+
+button {
+  width: 100%;
+  padding: 14px 32px;
+  border-radius: 10px;
+  color: var(--Card-Background);
+  background: var(--Button);
+  margin-bottom: 20px;
+}
+
+/* ********************* */
+/* MEDIA QUERIES */
+/* ********************* */
+
+@media (min-width: 400px) {
+  .card-main-content {
+    padding: 44px 46px;
+  }
+
+  .card-intro-text h1 {
+    font-size: 28px;
+  }
 }
