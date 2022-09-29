@@ -57,6 +57,7 @@ textarea,
 select {
   font: inherit;
   border: none;
+  background: none;
 }
 
 /* ********************* */
