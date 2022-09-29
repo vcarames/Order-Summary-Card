@@ -73,6 +73,11 @@ body {
   font-family: "Red Hat Display", sans-serif;
   background: var(--Background);
   padding: 20px;
+
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
 
 .card {
@@ -86,6 +91,7 @@ body {
   overflow: hidden;
   /* gap: 20px; */
   text-align: center;
+  box-shadow: 0px 10px 15px -3px hsla(0, 0%, 0%, 0.1);
 }
 
 .card-main-content {
@@ -118,7 +124,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-bottom: 46px;
+  margin-bottom: 30px;
   padding: 26px;
   border-radius: 14px;
   background: var(--Plan-Background);
@@ -148,11 +154,13 @@ body {
 
 button {
   width: 100%;
-  padding: 14px 32px;
+  padding: 15px 32px;
   border-radius: 10px;
   color: var(--Card-Background);
   background: var(--Button);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  box-shadow: 0px 10px 15px -3px hsl(245, 75%, 52%, 40%);
 }
 
 .cancel-order-link {
@@ -165,6 +173,10 @@ button {
 /* ********************* */
 
 @media (min-width: 400px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+  }
+
   .card-main-content {
     padding: 44px 46px;
   }
