@@ -124,6 +124,7 @@ body {
   border-radius: 14px;
   background: var(--Plan-Background);
 }
+
 .plan-details {
   display: flex;
   align-items: center;
@@ -177,7 +178,7 @@ button {
 
 @media (min-width: 375px) {
   .card-main-content {
-    padding: 44px 46px;
+    padding: 34px 36px;
   }
 
   .plan-detail-container {
@@ -202,11 +203,20 @@ button {
     background-image: url(/images/pattern-background-desktop.svg);
   }
 
+  .card-main-content {
+    padding: 44px 46px;
+  }
+
   .card-intro-text h1 {
     margin-bottom: 17px;
   }
 
   .plan-detail-container {
     padding: 26px;
+    margin-bottom: 42px;
+  }
+
+  button {
+    margin-bottom: 50px;
   }
 }
