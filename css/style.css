@@ -9,7 +9,7 @@
   --Card-Background: hsl(0, 0%, 100%);
   --Button: hsl(245, 75%, 52%);
   --Plan-Background: hsl(225, 100%, 98%);
-  --Desaturated-Blue: hsl(224, 23%, 55%);
+  --Text: hsl(224, 23%, 55%);
   --Dark-Blue: hsl(223, 47%, 23%);
 }
 
@@ -106,6 +106,7 @@ body {
   font-size: 17px;
   line-height: 1.6;
   margin-bottom: 20px;
+  color: var(--Text);
 }
 
 /* ********************* */
@@ -128,6 +129,19 @@ body {
   gap: 20px;
 }
 
+.plan-type {
+  font-weight: 700;
+}
+
+.plan-price {
+  color: var(--Text);
+}
+
+.plan-change-link {
+  color: var(--Button);
+  font-weight: 700;
+}
+
 /* ********************* */
 /* BUTTON */
 /* ********************* */
@@ -139,6 +153,11 @@ button {
   color: var(--Card-Background);
   background: var(--Button);
   margin-bottom: 20px;
+}
+
+.cancel-order-link {
+  font-weight: 700;
+  color: var(--Text);
 }
 
 /* ********************* */
