@@ -10,7 +10,8 @@
   --Button: hsl(245, 75%, 52%);
   --Plan-Background: hsl(225, 100%, 98%);
   --Text: hsl(224, 23%, 55%);
-  --Dark-Blue: hsl(223, 47%, 23%);
+
+  --Transition: 0.7s ease;
 }
 
 /* ********************* */
@@ -87,6 +88,8 @@ body {
   overflow: hidden;
   text-align: center;
   box-shadow: 0px 10px 15px -3px hsla(0, 0%, 0%, 0.1);
+
+  transition: var(--Transition);
 }
 
 .card-main-content {
@@ -101,6 +104,7 @@ body {
 .card-intro-text h1 {
   font-size: clamp(1.25rem, calc(-0.25rem + 6.4vw), 1.75rem);
   margin-bottom: 10px;
+  transition: var(--Transition);
 }
 
 .card-intro-text p {
@@ -108,6 +112,7 @@ body {
   line-height: 1.6;
   margin-bottom: 20px;
   color: var(--Text);
+  transition: var(--Transition);
 }
 
 /* ********************* */
@@ -123,6 +128,7 @@ body {
   padding: 16px;
   border-radius: 14px;
   background: var(--Plan-Background);
+  transition: var(--Transition);
 }
 
 .plan-details {
@@ -137,6 +143,7 @@ body {
 button,
 .cancel-order-link {
   font-size: clamp(0.88rem, calc(0.65rem + 1.11vw), 1rem);
+  transition: var(--Transition);
 }
 
 .plan-type {
@@ -165,6 +172,7 @@ button {
   margin-bottom: 24px;
   font-weight: 600;
   box-shadow: 0px 10px 15px -3px hsl(245, 75%, 52%, 40%);
+  transition: var(--Transition);
 }
 
 .cancel-order-link {
