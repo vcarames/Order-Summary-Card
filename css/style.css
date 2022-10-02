@@ -173,6 +173,7 @@ button {
   font-weight: 600;
   box-shadow: 0px 10px 15px -3px hsl(245, 75%, 52%, 40%);
   transition: var(--Transition);
+  cursor: pointer;
 }
 
 .cancel-order-link {
@@ -183,6 +184,14 @@ button {
 /* ********************* */
 /* MEDIA QUERIES */
 /* ********************* */
+
+@media (hover: hover) {
+  .plan-change-link:hover,
+  button:hover,
+  .cancel-order-link:hover {
+    filter: brightness(1.6);
+  }
+}
 
 @media (min-width: 375px) {
   .card-main-content {
