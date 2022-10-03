@@ -75,7 +75,7 @@ body {
   background: var(--Background);
   padding: 20px;
 
-  background-image: url(/images/pattern-background-mobile.svg);
+  background-image: url(../images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
@@ -217,7 +217,7 @@ button {
 
 @media (min-width: 450px) {
   body {
-    background-image: url(/images/pattern-background-desktop.svg);
+    background-image: url(../images/pattern-background-desktop.svg);
   }
 
   .card-main-content {
